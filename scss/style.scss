@@ -1,0 +1,27 @@
+// Базовые настройки сетки
+@import 'grid';
+
+// Шрифты
+@import 'fonts';
+
+// Настройки интерфейса
+@import 'interface';
+
+// Цвета
+@import 'colors';
+
+// Скроллбар
+@import 'scrollbar';
+
+// Блоки
+@import 'blocks/navbar';
+@import 'blocks/hero';
+@import 'blocks/why';
+@import 'blocks/discount';
+@import 'blocks/features';
+@import 'blocks/certificate';
+@import 'blocks/desc';
+@import 'blocks/request';
+@import 'blocks/comparison';
+@import 'blocks/address';
+@import 'blocks/footer';
