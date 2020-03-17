@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @media (max-width: 522px) {
+    background-image: none;
+  }
   &__content {
     padding: 70px 0 50px;
     margin-left: auto;
