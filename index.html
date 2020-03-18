@@ -5,25 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Детские автокресла | Крылатко</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="scroll">
+
+  <div class="modal-bg">
+    <div class="recall-modal">
+        <img src="img/modal/close.png" alt="Закрыть" class="modal-close recall-modal-close">
+        <h3 class="recall-modal__title">Обратный звонок</h3>
+        <div class="recall-modal__text">Оставляйте номер, мы вам перезвоним!</div>
+        <input type="tel" class="recall-modal__input input-phone" placeholder="Ваш телефон">
+        <button class="recall-modal__btn thank-modal-link_form btn_blue wow pulse" data-wow-delay="2s">ПЕРЕЗВОНИТЕ
+          МНЕ</button>
+    </div>
+  </div>
+
+  <div class="thank-modal-bg">
+    <div class="thank-modal">
+      <img src="img/modal/close.png" alt="Закрыть" class="modal-close thank-modal-close">
+      <h3 class="thank-modal__title">Спасибо за вашу заявку!</h3>
+      <div class="thank-modal__text">Наш менеджер свяжется с вами
+        в ближайшее время!</div>
+    </div>
+  </div>
 
   <header class="header">
+
     <div class="navbar">
       <div class="container">
         <div class="navbar__content">
           <a href="index.html"><img src="img/navbar/logo.png" alt="logo" class="logo"></a>
           <div class="phone">
             <a href="tel:+79507333170" class="phone__tel">+7 (950) 733-31-70</a>
-            <div class="phone__form-link">Заказать обратный звонок</div>
+            <div class="phone__form-link recall-modal-link">Заказать обратный звонок</div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="hero">
       <div class="container">
         <div class="hero__content wow fadeInRight">
@@ -34,7 +56,8 @@
             <h3 class="hero-form__title">Нет времени читать?</h3>
             <div class="hero-form__text">Оставляйте номер, мы вам перезвоним!</div>
             <input type="tel" class="hero-form__input input-phone" placeholder="Ваш телефон">
-            <button class="hero-form__btn wow pulse btn_blue" data-wow-delay="2s">Перезвоните мне</button>
+            <button class="hero-form__btn thank-modal-link wow pulse btn_blue" data-wow-delay="2s">Перезвоните
+              мне</button>
           </form>
         </div>
       </div>
@@ -104,9 +127,9 @@
               только до:</div> <span class="discount-action__date"><span
                 class="discount-action__date-number">4</span></span>декабря!
           </div>
-          <a href="#" class="discount-action__btn">Заказать</a>
+          <a href="#" class="discount-action__btn recall-modal-link">Заказать</a>
         </div>
-        <div class="discount-price">
+        <div class="discount-price wow bounce" data-wow-delay="1s">
           <div class="discount-price__prev-cost">2 545 р.</div>
           <div class="discount-price__line"></div>
           <div class="discount-price__new-cost">1 850 р.</div>
@@ -118,19 +141,19 @@
   <div class="features">
     <div class="container">
       <div class="features__content">
-        <div class="features__item">
+        <div class="features__item wow fadeInUp" data-wow-delay="0.4s">
           <div class="features__number">8</div>
           <div class="features__text">лет на рынке</div>
         </div>
-        <div class="features__item">
+        <div class="features__item wow fadeInUp" data-wow-delay="0.6s">
           <div class="features__number">21 645</div>
           <div class="features__text">кресел продано</div>
         </div>
-        <div class="features__item">
+        <div class="features__item wow fadeInUp" data-wow-delay="0.8s">
           <div class="features__number">1 254</div>
           <div class="features__text">что-то сделано</div>
         </div>
-        <div class="features__item">
+        <div class="features__item wow fadeInUp" data-wow-delay="1s">
           <div class="features__number">45</div>
           <div class="features__text">заказов в день</div>
         </div>
@@ -142,7 +165,7 @@
     <div class="container">
       <h2 class="certificate__title">Сертификация товара</h2>
       <div class="certificate__content">
-        <div class="certificate__img-wrap">
+        <div class="certificate__img-wrap wow rollIn" data-wow-delay="0.5s">
           <img src="img/certificate/certificate.jpg" alt="Сертификат">
         </div>
         <div class="certificate__text-content">
@@ -164,11 +187,11 @@
   <div class="desc">
     <div class="desc__content">
       <div class="desc__col desc__col_1">
-        <div class="desc__item desk-item desk-item_1">
+        <div class="desc__item desk-item desk-item_1 wow bounceInDown" data-wow-delay="0.5s">
           <h3 class="desk-item__title">Крепкие ремни</h3>
           <p class="desk-item__text">Тесьма ременная имеет плотную структуру и выдерживает большие нагрузки.</p>
         </div>
-        <div class="desc__item desk-item desk-item_2">
+        <div class="desc__item desk-item desk-item_2 wow bounceInUp" data-wow-delay="0.5s">
           <h3 class="desk-item__title">Удобная установка</h3>
           <p class="desk-item__text">Достаточно продеть штатный ремень безопасности автомобиля, через специальный
             карман
@@ -176,12 +199,12 @@
         </div>
       </div>
       <div class="desc__col desc__col_2">
-        <div class="desc__item desk-item desk-item_3">
+        <div class="desc__item desk-item desk-item_3 wow bounceInDown" data-wow-delay="0.5s">
           <h3 class="desk-item__title">Безопасные материалы</h3>
           <p class="desk-item__text">При пошиве используется ткань "Оксфорд", сетка Air-mesh 3-х слойная, поролон,
             спанбонд, халлофайбер. Все материалы экологически чистые, сертифицированы.</p>
         </div>
-        <div class="desc__item desk-item desk-item_4">
+        <div class="desc__item desk-item desk-item_4 wow bounceInUp" data-wow-delay="0.5s">
           <h3 class="desk-item__title">Прочные крепления</h3>
           <p class="desk-item__text">Устройство ВИННИ" имеет пятиточечную систему крепления. Пряжки производят из
             высокопрочных пластиков, имеющих хорошие показатели упругости.</p>
@@ -192,7 +215,7 @@
 
   <section class="request">
     <div class="container">
-      <div class="request__discount request-discount">
+      <div class="request__discount request-discount wow bounceInLeft" data-wow-delay="0.3s">
         <div class="request-discount__text">Скидка 28%</div>
         <div class="request-discount__prev-cost">2 545 р.</div>
         <div class="request-discount__line"></div>
@@ -204,7 +227,7 @@
         </h2>
         <form action="" class="request__form">
           <input type="tel" class="request__input input-phone" placeholder="Ваш телефон">
-          <button class="request__btn btn_blue wow pulse" data-wow-delay="2s">Перезвоните мне</button>
+          <button class="request__btn thank-modal-link btn_blue wow pulse" data-wow-delay="2s">Перезвоните мне</button>
         </form>
       </div>
     </div>
@@ -214,34 +237,35 @@
     <div class="comparison__content">
       <div class="comparison__cols">
         <div class="comparison__col comparison__col_1">
-          <h3 class="comparison__title comparison__title_1">Обычное
+          <h3 class="comparison__title comparison__title_1 wow fadeInDown">Обычное
             кресло</h3>
-          <p class="comparison__text comparison__text_1">боковые стенки преграда
+          <p class="comparison__text comparison__text_1 wow fadeInLeft" data-wow-delay="0.2s">боковые стенки преграда
             для движений ребенка,
             особенно в зимний период,
             когда много одежды</p>
-          <p class="comparison__text comparison__text_2">необходимо менять
+          <p class="comparison__text comparison__text_2 wow fadeInLeft" data-wow-delay="0.4s">необходимо менять
             автокресло по мере
             увеличения веса ребенка</p>
-          <p class="comparison__text comparison__text_3">имеет 5-ти точечную
+          <p class="comparison__text comparison__text_3 wow fadeInLeft" data-wow-delay="0.6s">имеет 5-ти точечную
             фиксацию ребенка</p>
-          <p class="comparison__text comparison__text_4">нужно убирать в багажник,
+          <p class="comparison__text comparison__text_4 wow fadeInLeft" data-wow-delay="0.8s">нужно убирать в багажник,
             при перевозки взрослых
             или каких либо грузов</p>
         </div>
         <div class="comparison__col comparison__col_2">
-          <h3 class="comparison__title comparison__title_2">Бескаркасное
+          <h3 class="comparison__title comparison__title_2 wow fadeInDown">Бескаркасное
             кресло</h3>
-          <p class="comparison__text comparison__text_5">дает полную безопасную
+          <p class="comparison__text comparison__text_5 wow fadeInRight" data-wow-delay="0.2s">дает полную безопасную
             свободу ребёнка
             ОСТАВЛЯЕТ СПИНКУ
             СИДЕНИЯ ЧИСТЫМ</p>
-          <p class="comparison__text comparison__text_6">подходит 1, 2, 3 группе детей
+          <p class="comparison__text comparison__text_6 wow fadeInRight" data-wow-delay="0.4s">подходит 1, 2, 3 группе
+            детей
             (от 9 кг до 36 кг) (от 1 года
             до 12 лет)</p>
-          <p class="comparison__text comparison__text_7">имеет 5-ти точечную
+          <p class="comparison__text comparison__text_7 wow fadeInRight" data-wow-delay="0.6s">имеет 5-ти точечную
             фиксацию ребенка</p>
-          <p class="comparison__text comparison__text_8">не мешает при перевозке
+          <p class="comparison__text comparison__text_8 wow fadeInRight" data-wow-delay="0.8s">не мешает при перевозке
             пассажиров или грузов.
             Весит 700 грамм</p>
         </div>
@@ -264,7 +288,8 @@
               ул. Академика Королева, 38</span>
             или используйте
           </div>
-          <button class="address__btn btn_blue wow pulse" data-wow-delay="2s">Бесплатная доставка</button>
+          <button class="address__btn btn_blue wow pulse recall-modal-link" data-wow-delay="2s">Бесплатная
+            доставка</button>
         </div>
       </div>
     </div>
@@ -287,7 +312,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script src="js/wow.min.js"></script> -->
+  <script src="js/wow.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>

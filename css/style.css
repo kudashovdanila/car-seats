@@ -64,9 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: border .2s;
   transition: border .2s; }
   .input-phone:focus {
-    border: 1px solid #5892a6;
-    padding-left: 60px;
-    text-align: left; }
+    border: 1px solid #5892a6; }
     .input-phone:focus::-webkit-input-placeholder {
       color: transparent; }
     .input-phone:focus:-ms-input-placeholder {
@@ -88,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Museo Sans 700 Bold', sans-serif;
   cursor: pointer;
   -webkit-transition: background .2s;
-  transition: background .2s; }
+  transition: background .2s;
+  outline: none; }
   .btn_blue:hover {
     background: #55a6c2; }
 
@@ -104,6 +103,113 @@ h1, h2, h3, h4, h5, h6 {
   background: #5892a6;
   border-radius: 8px;
   border: 2px solid #d4d4d4; }
+
+.modal-bg {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 11, 24, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5; }
+
+.modal-bg-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.recall-modal {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 38px 0px rgba(103, 175, 201, 0.34);
+          box-shadow: 0px 0px 38px 0px rgba(103, 175, 201, 0.34);
+  max-width: 300px;
+  background-color: #ffffff;
+  border-radius: 20.0px;
+  text-align: center;
+  padding: 40px 35px; }
+  .recall-modal__title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Museo Sans 700 Bold', sans-serif;
+    color: #5892a6;
+    margin-bottom: 15px; }
+  .recall-modal__text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: 'Museo Sans 300 Light', sans-serif;
+    color: #000000;
+    margin-bottom: 20px; }
+  .recall-modal__input {
+    margin-bottom: 15px; }
+  .recall-modal__btn {
+    display: block;
+    padding: 17px 44px; }
+
+.thank-modal-bg {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 11, 24, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5; }
+  .thank-modal-bg-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.thank-modal {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 38px 0px rgba(103, 175, 201, 0.34);
+          box-shadow: 0px 0px 38px 0px rgba(103, 175, 201, 0.34);
+  max-width: 310px;
+  background-color: #ffffff;
+  border-radius: 20.0px;
+  text-align: center;
+  padding: 40px 35px; }
+  .thank-modal__title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Museo Sans 700 Bold', sans-serif;
+    margin-bottom: 15px;
+    color: #5892a6; }
+  .thank-modal__text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: 'Museo Sans 300 Light', sans-serif;
+    color: #000000; }
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: -44px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s; }
+  .modal-close:hover {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.scroll-hidden {
+  overflow: hidden; }
 
 .navbar {
   padding: 15px 0; }
@@ -132,9 +238,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #5e5e5e;
     text-decoration: none;
     margin-bottom: 10px; }
-    @media (max-width: 345px) {
+    @media (max-width: 365px) {
       .phone__tel {
-        font-size: 20px; } }
+        font-size: 18px; } }
     @media (max-width: 470px) {
       .phone__tel {
         margin-bottom: 5px; } }
@@ -146,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #5892a6; }
     .phone__form-link:hover {
       color: #558494; }
-    @media (max-width: 345px) {
+    @media (max-width: 365px) {
       .phone__form-link {
         font-size: 12px; } }
 

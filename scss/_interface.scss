@@ -22,13 +22,12 @@ h1, h2, h3, h4, h5, h6 {
 
   &:focus {
     border: 1px solid #5892a6;
-    padding-left: 60px;
-    text-align: left;
 
     &::placeholder {
       color: transparent;
     }
   }
+
 }
 
 .btn_blue {
@@ -42,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   @include bold;
   cursor: pointer;
   transition: background .2s;
+  outline: none;
 
   &:hover {
     background: darken(#68b0c9, 5%);
