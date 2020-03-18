@@ -14,12 +14,12 @@
 
   <div class="modal-bg">
     <div class="recall-modal">
-        <img src="img/modal/close.png" alt="Закрыть" class="modal-close recall-modal-close">
-        <h3 class="recall-modal__title">Обратный звонок</h3>
-        <div class="recall-modal__text">Оставляйте номер, мы вам перезвоним!</div>
-        <input type="tel" class="recall-modal__input input-phone" placeholder="Ваш телефон">
-        <button class="recall-modal__btn thank-modal-link_form btn_blue wow pulse" data-wow-delay="2s">ПЕРЕЗВОНИТЕ
-          МНЕ</button>
+      <img src="img/modal/close.png" alt="Закрыть" class="modal-close recall-modal-close">
+      <h3 class="recall-modal__title">Обратный звонок</h3>
+      <div class="recall-modal__text">Оставляйте номер, мы вам перезвоним!</div>
+      <input type="tel" class="recall-modal__input input-phone" placeholder="Ваш телефон">
+      <button class="recall-modal__btn thank-modal-link_form btn_blue wow pulse" data-wow-delay="2s">ПЕРЕЗВОНИТЕ
+        МНЕ</button>
     </div>
   </div>
 
@@ -277,8 +277,7 @@
     <div class="container">
       <div class="address__container">
         <div class="address__map">
-          <iframe id="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.093742504459!2d61.29046181544526!3d55.16413604470566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c59252d501470f%3A0x6fc5c036d8cac25e!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCa0L7RgNC-0LvRkdCy0LAsIDM4LCDQp9C10LvRj9Cx0LjQvdGB0LosINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC7LiwgNDU0MDA0!5e0!3m2!1sru!2sru!4v1584450909574!5m2!1sru!2sru"></iframe>
+          <iframe id="map" src=""></iframe>
         </div>
         <div class="address__content">
           <img src="img/address/01.svg" alt="Адрес" class="address__icon">
@@ -314,6 +313,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById('map').src =
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.093742504459!2d61.29046181544526!3d55.16413604470566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c59252d501470f%3A0x6fc5c036d8cac25e!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCa0L7RgNC-0LvRkdCy0LAsIDM4LCDQp9C10LvRj9Cx0LjQvdGB0LosINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC7LiwgNDU0MDA0!5e0!3m2!1sru!2sru!4v1584450909574!5m2!1sru!2sru';
+      }, 5000);
+    };
+  </script>
   <script src="js/main.js"></script>
 </body>
 
